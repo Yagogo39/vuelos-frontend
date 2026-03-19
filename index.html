@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Vuelos</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>Sistema de Vuelos</h2>
+        <p class="subtitle">Búsqueda de rutas mediante algoritmo BFS</p>
+
+        <div id="panel-ciudades" style="margin-bottom: 20px; font-size: 0.85rem; color: #64748b;">
+            <strong>Ciudades disponibles:</strong>
+            <div id="lista-tags" style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: 5px;">
+                Cargando ciudades...
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="origen">Ciudad de Origen</label>
+            <input type="text" id="origen" placeholder="Ej: Jiloyork" autocomplete="off">
+        </div>
+
+        <div class="form-group">
+            <label for="destino">Ciudad de Destino</label>
+            <input type="text" id="destino" placeholder="Ej: Monterrey" autocomplete="off">
+        </div>
+
+        <button id="btnBuscar">Buscar Ruta Óptima</button>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
